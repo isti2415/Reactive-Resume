@@ -1,4 +1,4 @@
-import type { ResumeData } from "./index";
+import type { PortfolioData, ResumeData } from "./index";
 
 export const sampleResume: ResumeData = {
   basics: {
@@ -336,5 +336,12 @@ export const sampleResume: ResumeData = {
       underlineLinks: true,
     },
     notes: "",
+  },
+};
+
+export const samplePortfolio: PortfolioData = {
+  data: {
+    template: "template-1",
+    resumeID: "",
   },
 };

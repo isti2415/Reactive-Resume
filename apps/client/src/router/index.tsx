@@ -11,6 +11,7 @@ import { VerifyOtpPage } from "../pages/auth/verify-otp/page";
 import { BuilderLayout } from "../pages/builder/layout";
 import { builderLoader, BuilderPage } from "../pages/builder/page";
 import { DashboardLayout } from "../pages/dashboard/layout";
+import { PortfolioPage } from "../pages/dashboard/portfolio/page";
 import { ResumesPage } from "../pages/dashboard/resumes/page";
 import { SettingsPage } from "../pages/dashboard/settings/page";
 import { HomeLayout } from "../pages/home/layout";
@@ -64,6 +65,7 @@ export const routes = createRoutesFromElements(
         <Route element={<AuthGuard />}>
           <Route element={<DashboardLayout />}>
             <Route path="resumes" element={<ResumesPage />} />
+            <Route path="portfolio" element={<PortfolioPage />} />
             <Route path="settings" element={<SettingsPage />} />
 
             <Route index element={<Navigate replace to="/dashboard/resumes" />} />
